@@ -33,31 +33,30 @@
             <ul>
                 <li><strong>Authentication:</strong> We use Firebase Auth to manage account security (Email/Phone).</li>
                 <li><strong>Cloud Storage:</strong> If enabled, your transaction data is stored in Google Firebase (Firestore).</li>
-                <li><strong>Security:</strong> We use Firebase App Check to verify app integrity.</li>
+                <li><strong>Security:</strong> We use Firebase App Check to verify app integrity and prevent unauthorized access.</li>
             </ul>
 
             <h4>2. Specific Permissions & Sensitive Data</h4>
             <p>To provide core features, the app requests the following permissions:</p>
             <ul>
-                <li><strong>Microphone (RECORD_AUDIO):</strong> Used exclusively for our "Voice-to-Text" feature. This allows you to speak your transaction details. 
-                    <br><em>Note: We do not store or share your voice recordings. Audio is processed ephemerally and then discarded.</em></li>
+                <li><strong>Microphone (RECORD_AUDIO):</strong> Used exclusively for our "Voice-to-Text" feature. Audio is processed ephemerally to convert speech to text and is <strong>never</strong> recorded or stored on any server.</li>
                 <li><strong>Contacts (READ_CONTACTS):</strong> Optional. Used solely to pick names for entries. Contact data stays on your device and is never uploaded.</li>
-                <li><strong>Storage:</strong> Used to export PDF/CSV reports to your local gallery or files.</li>
+                <li><strong>Storage:</strong> Used to export PDF/CSV reports to your local storage.</li>
                 <li><strong>Internet:</strong> Required for account sync and Firebase services.</li>
             </ul>
 
             <h4>3. Data Security & Encryption</h4>
-            <p>In compliance with modern safety standards, all data transmitted between the app and our servers is encrypted using <strong>HTTPS/TLS (SSL)</strong>. Your financial records are private; we do not sell or rent your data to third parties.</p>
+            <p>All data transmitted between the app and our servers is encrypted using <strong>HTTPS/TLS (SSL)</strong>. We do not sell, rent, or share your financial data with advertisers or third parties.</p>
 
-            <h4>4. Data Retention & Deletion Rights</h4>
-            <p>You have the "Right to be Forgotten." You can:</p>
+            <h4 id="deletion">4. Data Retention & Deletion Rights</h4>
+            <p>You have the "Right to be Forgotten." In compliance with Google Play policies, we provide the following deletion options:</p>
             <ul>
-                <li>Delete individual transactions or entire books within the app.</li>
-                <li><strong>Request Account Deletion:</strong> Use the "Delete Account" button in Settings to permanently wipe all data from our Firebase servers.</li>
+                <li><strong>In-App Deletion:</strong> You can delete individual transactions or your entire account through the Settings menu within the app.</li>
+                <li><strong>Online Request:</strong> If you cannot access the app, you may request account and data deletion by emailing <strong>shahbazzulfiqar894@gmail.com</strong>. We will process your request and wipe all associated Firebase data within 7 business days.</li>
             </ul>
 
             <h4>5. Contact Information</h4>
-            <p>For questions about your data safety, please contact:<br>
+            <p>If you have questions about your data safety or privacy, please reach out to:<br>
             <strong>shahbazzulfiqar894@gmail.com</strong></p>
         </section>
 
